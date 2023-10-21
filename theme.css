@@ -1,0 +1,600 @@
+/* Acrylic League of legends client theme */
+/* Adjusted by egirlcatnip from Sarah's acrylic theme */
+
+/* Version: 1.0 */
+
+/* credits: @aimslut(discord), @egirlcatnip(discord) */
+
+/* this source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical    */
+/* Sarah's source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical */
+
+
+/* Settings section */
+
+:root {
+   /* Variables */
+
+   /* Client colors: */
+   --dark-brown: #352a17;
+   --light-brown: #785a28;
+   --text: #e8dfcc;
+
+}
+
+/* Font:  */
+
+/* Find font you want on https://fonts.google.com/ and edit the following import accordingly: */
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+
+:root {
+   --font-display: 'JetBrains Mono', sans-serif !important;
+   --font-body: 'JetBrains Mono', sans-serif !important;
+}
+
+/* Tweaks: */
+
+/* Show only Blue essence, hide  */
+.currency-rp {
+   display: none !important;
+}
+
+/* Purple lobby buttons */
+.find-match-button-container,
+.role-selectors-container,
+.animation-button-icon {
+   filter: hue-rotate(90deg);
+}
+
+/* Hover mouse to show */
+
+/* Chat, missions, league-voice buttons and version info, bottom right */
+.alpha-version-panel {
+   opacity: 0 !important;
+   transition: 0.2s !important;
+}
+
+.alpha-version-panel:hover {
+   opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
+/* Teamfight Tactics button, top of screen */
+.menu_item_navbar_tft {
+   opacity: 0 !important;
+   transition: 0.2s !important;
+}
+
+.menu_item_navbar_tft:hover {
+   opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
+/* Party invite menu, next to play button */
+.invite-info-panel-container {
+   opacity: 0 !important;
+   transition: 0.2s !important;
+}
+
+.invite-info-panel-container:hover {
+   opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
+/* Social panel (friends-list) menu buttons, leftmost panel */
+.lol-social-actions-bar>.actions-bar>.buttons *:not(.friend-header) {
+   opacity: 0;
+   transition: 0.2s !important;
+}
+
+.lol-social-actions-bar:hover>.actions-bar>.buttons *:not(.friend-header) {
+   opacity: 1;
+   transition: 0.2s !important;
+}
+
+
+
+
+
+/* Lobby invite buttons, in place of unfilled banners */
+.v2-banner-placeholder {
+   display: none !important;
+}
+
+/* Lobby panel (party player count, game-mode), top of friends-list */
+lol-social-panel {
+   display: none !important;
+}
+
+/* Status indicator, under name, top right corner */
+.lower-details {
+   display: none !important;
+}
+
+/* Game status icon, notificaton - downloads, offline or online, disabled champs.. , next to top play button*/
+.navigation-status-ticker,
+.lol-uikit-flyout-frame.flyout:not(lol-social-chat-window) {
+   display: none !important
+}
+
+
+
+
+
+
+
+/* End of hover mouse section  */
+
+
+
+/* End of settings section */
+
+
+
+
+/* All spinners */
+/* (to be added to) */
+
+.rcp-fe-lol-home-loading-spinner,
+.style-profile-loading-spinner,
+.spinner {
+   display: none !important;
+   background: none !important;
+}
+
+
+/* Level ring */
+.summoner-level-ring {
+   display: none !important;
+}
+
+.bottom.unfilled.xp-ring {
+   background: var(--dark-brown);
+}
+
+.middle.filled.xp-ring {
+   background: var(--light-brown);
+}
+
+.summoner-level {
+   color: var(--text) !important;
+   background-image: none !important;
+   bottom: -8px;
+}
+
+
+
+/* Social panel */
+
+/* List arrows */
+.arrow-container {
+   display: none !important;
+}
+
+
+
+
+
+
+/* (This needs to get cleaned up and organized properly) */
+.clash-root-background-landing,
+.hold-leave,
+.collections-application,
+.clash-root-background-landing,
+.__rcp-fe-lol-store,
+.loot-backdrop.background-static,
+.personalized-offers-root,
+.parties-view,
+.yourshop-root,
+.clash-root-background,
+.clash-root-background-landing,
+.store-backdrop,
+.challenges-collection-component>.background,
+.loot-backdrop .lol-uikit-video-content,
+.rcp-fe-lol-event-shop-application,
+.champ-select-bg-darken,
+.rcp-fe-lol-game-in-progress,
+.postgame-background-image,
+.clash-root-background-landing,
+.clash-aram-intro-modal,
+.clash-root-background,
+.postgame-champion-background-wrapper,
+.stats-backdrop,
+.rcp-fe-viewport-sidebar,
+.loot-loading-screen,
+.lol-social-sidebar,
+.cdp-backdrop.progression:after,
+.cdp-backdrop-component,
+.cdp-backdrop:after,
+.clash-logo-border,
+.group-header,
+.ember-text-field,
+.parties-background-mask,
+.match-details-root,
+#ember6936,
+/* .champion-splash-background, */
+#ember7563,
+.loading-tab::after,
+.loot-milestones-tracker-wrapper,
+.rcp-fe-lol-tft-application-background,
+.tft-home-footer-bg,
+.tft-hub-footer-bg,
+.event-shop-index,
+.event-shop-page-header,
+.event-shop-progression,
+.event-shop-progression-info,
+.event-shop-reward-track-wrapper,
+.event-shop-token-shop-header,
+.event-shop-progression-track,
+.event-shop-main-view-progression-minimize-button-trapezoid,
+.event-shop-main-view-progression-minimize-button-trapezoid-border {
+   background-color: transparent !important;
+   background: transparent !important;
+   backdrop-filter: none !important;
+   filter: none !important;
+}
+
+body,
+html {
+   background-color: transparent !important;
+   background: transparent !important;
+   backdrop-filter: none !important;
+   filter: none !important;
+}
+
+
+
+/* Loading screen */
+
+
+.cdp-progression-header {
+   border: none !important;
+}
+
+.cdp-backdrop-img {
+   opacity: 0.4 !important;
+}
+
+.group-separator {
+   display: none !important;
+   border: none !important;
+}
+
+
+.lol-loading-screen-lol-icon,
+.lol-loading-screen-container {
+   margin: 0 !important;
+}
+
+/* .ember-text-field {
+   padding-left: 5px !important;
+} */
+
+.navigation-root-component {
+   border-bottom: none !important;
+}
+
+#ember6325,
+.parties-background {
+   display: none !important;
+}
+
+
+
+.owned-filter {
+   border: none !important;
+}
+
+
+.lobby-header-overlay,
+.loading-content,
+.bottom-gradient,
+.event-shop-page-header-vertical-divider {
+   display: none !important;
+}
+
+.navbar-blur {
+   background: transparent !important;
+   width: 0 !important;
+}
+
+.event-shop-category-nav-bar,
+.event-shop-offer-card,
+.event-shop-reward-track-wrapper,
+.custom-invite-header,
+.parties-invite-info-panel-body {
+   border: none !important;
+   background: none !important;
+}
+
+#background-ambient {
+   display: none !important;
+}
+
+.v2-parties-invite-info-panel,
+.parties-invite-info-panel {
+   background: none !important;
+}
+
+.parties-invite-info-panel {
+   border-radius: 10px;
+}
+
+#ember10585 {
+   top: 330px !important;
+}
+
+
+.lol-parties-status-card {
+   display: none !important;
+}
+
+
+.lol-uikit-flyout-frame {
+   display: none !important;
+}
+
+
+.lol-uikit-contextual-notification-targeted-layer {
+   display: none !important;
+}
+
+.parties-game-section {
+   display: none !important;
+   opacity: 0 !important;
+
+}
+
+.parties-footer-warning {
+   display: none !important;
+}
+
+
+.selection-modal .selection-modal-wrapper {
+   background: none !important;
+}
+
+.parties-game-search-divider {
+   display: none !important;
+   background: none !important;
+}
+
+.point-eligibility-icon {
+   display: none !important;
+}
+
+.chat-box {
+   background: none !important;
+}
+
+
+.horizontal-options-showcase-background {
+   background: none !important;
+}
+
+/*
+.left-nav-menu, #ember843 {
+   margin-left: 26px !important;
+} */
+
+.play-button-frame {
+   background: none !important;
+}
+
+
+/* #ember3146 > lol-social-panel, #ember3148 > lol-social-panel {
+   display:none !important;
+} */
+
+
+
+.store-loading {
+   display: none !important;
+}
+
+.right-nav-vertical-rule {
+   display: none !important;
+}
+
+
+
+.app-controls-support {
+   display: none !important;
+}
+
+.wallet-and-badges {
+   margin-right: 0 !important;
+}
+
+.main-navigation-menu-item:last-of-type {
+   margin-right: 0 !important;
+}
+
+.lol-uikit-layer-manager-wrapper {
+   display: none !important;
+}
+
+.lol-uikit-navigation-item {
+   cursor: pointer !important;
+}
+
+.rcp-fe-lol-home-loading-spinner,
+.style-profile-loading-spinner,
+.spinner {
+   display: none !important;
+   background: none !important;
+}
+
+.event-shop-index-header,
+.event-shop-progression {
+   box-shadow: none !important;
+}
+
+.event-shop-token-shop-header,
+.event-shop-page-header,
+.event-shop-progression-info {
+   box-shadow: none !important;
+   border: none !important;
+}
+
+
+.lobby-header-overlay,
+.loading-content,
+.bottom-gradient,
+.event-shop-page-header-vertical-divider {
+   display: none !important;
+}
+
+
+
+.lol-loading-screen-default-state {
+   background: transparent !important;
+   backdrop-filter: blur(20px) !important;
+   /* Client loading screen with logo */
+}
+
+
+
+
+.clash-root-action-timeline-background-gradient {
+   display: none !important;
+}
+
+
+.style-profile-emblem-wrapper {
+   background: none !important;
+}
+
+
+.style-profile-backdrop-container,
+.clash-parallax-background,
+.clash-tab-bracket-background {
+   -webkit-mask: radial-gradient(white, transparent 76%);
+   mask: radial-gradient(white, transparent 76%);
+}
+
+
+.event-shop-token-shop-card-available:hover {
+   filter: unset !important;
+}
+
+.event-shop-token-shop-card-available:hover:after {
+   background: none !important;
+}
+
+.parties-game-search-divider {
+   display: none !important;
+}
+
+
+
+
+.screen-root.active {
+   -webkit-mask: linear-gradient(180deg, transparent 0%, white 30%, white 100%);
+   mask: linear-gradient(90deg, transparent 0%, white 10%, white 100%);
+
+}
+
+.rcp-fe-viewport-persistent {
+   -webkit-mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
+   mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
+
+}
+
+.party-members-container,
+.style-profile-summoner-info-component {
+   -webkit-mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
+   mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
+
+}
+
+
+/* Token borders */
+.achievement-token-container {
+   background: none !important;
+}
+
+
+
+.postgame-header-section {
+   background: none !important;
+}
+
+.postgame-header-container {
+   border-bottom: none !important;
+}
+
+.career-postgame-progression-component div.postgame-champion-background-wrapper>div {
+   -webkit-mask: none !important;
+   mask: none !important;
+
+
+}
+
+.career-postgame-progression-component>div.postgame-champion-background-wrapper>div>img {
+   -webkit-mask: radial-gradient(white, transparent 70%);
+   mask: radial-gradient(white, transparent 70%);
+   position: unset !important;
+
+
+}
+
+.postgame-root-component,
+.postgame-header-section.progression-tab {
+   backdrop-filter: none !important;
+}
+
+.challenge-container {
+   display: none !important;
+}
+
+.mastery-progression-container,
+.challenge-progression-top {
+   margin-left: 676px;
+   /* bottom: 60px; */
+}
+
+.add-perks-page-button-container {
+   display: none !important;
+}
+
+.scoreboard-row-player-controls-container {
+   background: none !important;
+}
+
+.honor-postgame-notification-contents {
+   background: none !important;
+}
+
+.player-history-stats-minions {
+   width: 50px !important;
+}
+
+.player-history-stats-kills {
+   width: unset !important;
+}
+
+.champion-mastery-info {
+   display: none !important;
+}
+
+
+
+.custom-game-tournament-code-container {
+   display: none !important;
+}
+
+.event-shop-xp-vertical-divider {
+   display: none !important;
+}
+
+.event-shop-progression-track {
+   border: none !important;
+}
+
+.loot-to-store-button {
+   display: none !important;
+}
+
+.lol-loading-screen-status-container {
+   display: none !important;
+}
