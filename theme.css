@@ -45,6 +45,39 @@
    filter: hue-rotate(90deg);
 }
 
+/* Social panel (friends-list) menu buttons, leftmost panel */
+.lol-social-actions-bar>.actions-bar>.buttons *:not(.friend-header) {
+   opacity: 0;
+   transition: 0.2s !important;
+}
+
+.lol-social-actions-bar:hover>.actions-bar>.buttons *:not(.friend-header) {
+   opacity: 1;
+   transition: 0.2s !important;
+}
+
+/* Lobby invite buttons, in place of unfilled banners */
+.v2-banner-placeholder {
+   display: none !important;
+}
+
+/* Lobby panel (party player count, game-mode), top of friends-list */
+lol-social-panel {
+   display: none !important;
+}
+
+/* Status indicator, under name, top right corner */
+.lower-details {
+   display: none !important;
+}
+
+/* Game status icon, notificaton - downloads, offline or online, disabled champs.. , next to top play button*/
+.navigation-status-ticker,
+.lol-uikit-flyout-frame.flyout:not(lol-social-chat-window) {
+   display: none !important
+}
+
+
 /* Hover mouse to show */
 
 /* Chat, missions, league-voice buttons and version info, bottom right */
@@ -80,56 +113,17 @@
    transition: 0.2s !important;
 }
 
-/* Social panel (friends-list) menu buttons, leftmost panel */
-.lol-social-actions-bar>.actions-bar>.buttons *:not(.friend-header) {
-   opacity: 0;
-   transition: 0.2s !important;
-}
-
-.lol-social-actions-bar:hover>.actions-bar>.buttons *:not(.friend-header) {
-   opacity: 1;
-   transition: 0.2s !important;
-}
-
-
-
-
-
-/* Lobby invite buttons, in place of unfilled banners */
-.v2-banner-placeholder {
-   display: none !important;
-}
-
-/* Lobby panel (party player count, game-mode), top of friends-list */
-lol-social-panel {
-   display: none !important;
-}
-
-/* Status indicator, under name, top right corner */
-.lower-details {
-   display: none !important;
-}
-
-/* Game status icon, notificaton - downloads, offline or online, disabled champs.. , next to top play button*/
-.navigation-status-ticker,
-.lol-uikit-flyout-frame.flyout:not(lol-social-chat-window) {
-   display: none !important
-}
-
-
-
-
-
-
-
 /* End of hover mouse section  */
 
 
-
+/* End of tweaks section */
 /* End of settings section */
 
 
 
+
+
+/* General theming section */
 
 /* All spinners */
 /* (to be added to) */
@@ -174,7 +168,6 @@ lol-social-panel {
 
 
 
-
 /* (This needs to get cleaned up and organized properly) */
 .clash-root-background-landing,
 .hold-leave,
@@ -211,7 +204,6 @@ lol-social-panel {
 .parties-background-mask,
 .match-details-root,
 #ember6936,
-/* .champion-splash-background, */
 #ember7563,
 .loading-tab::after,
 .loot-milestones-tracker-wrapper,
@@ -241,11 +233,6 @@ html {
    filter: none !important;
 }
 
-
-
-/* Loading screen */
-
-
 .cdp-progression-header {
    border: none !important;
 }
@@ -258,7 +245,6 @@ html {
    display: none !important;
    border: none !important;
 }
-
 
 .lol-loading-screen-lol-icon,
 .lol-loading-screen-container {
@@ -278,12 +264,9 @@ html {
    display: none !important;
 }
 
-
-
 .owned-filter {
    border: none !important;
 }
-
 
 .lobby-header-overlay,
 .loading-content,
@@ -380,13 +363,6 @@ html {
    background: none !important;
 }
 
-
-/* #ember3146 > lol-social-panel, #ember3148 > lol-social-panel {
-   display:none !important;
-} */
-
-
-
 .store-loading {
    display: none !important;
 }
@@ -394,8 +370,6 @@ html {
 .right-nav-vertical-rule {
    display: none !important;
 }
-
-
 
 .app-controls-support {
    display: none !important;
@@ -436,7 +410,6 @@ html {
    border: none !important;
 }
 
-
 .lobby-header-overlay,
 .loading-content,
 .bottom-gradient,
@@ -444,16 +417,11 @@ html {
    display: none !important;
 }
 
-
-
 .lol-loading-screen-default-state {
    background: transparent !important;
    backdrop-filter: blur(20px) !important;
    /* Client loading screen with logo */
 }
-
-
-
 
 .clash-root-action-timeline-background-gradient {
    display: none !important;
@@ -464,14 +432,12 @@ html {
    background: none !important;
 }
 
-
 .style-profile-backdrop-container,
 .clash-parallax-background,
 .clash-tab-bracket-background {
    -webkit-mask: radial-gradient(white, transparent 76%);
    mask: radial-gradient(white, transparent 76%);
 }
-
 
 .event-shop-token-shop-card-available:hover {
    filter: unset !important;
@@ -484,9 +450,6 @@ html {
 .parties-game-search-divider {
    display: none !important;
 }
-
-
-
 
 .screen-root.active {
    -webkit-mask: linear-gradient(180deg, transparent 0%, white 30%, white 100%);
@@ -507,13 +470,10 @@ html {
 
 }
 
-
 /* Token borders */
 .achievement-token-container {
    background: none !important;
 }
-
-
 
 .postgame-header-section {
    background: none !important;
@@ -526,15 +486,12 @@ html {
 .career-postgame-progression-component div.postgame-champion-background-wrapper>div {
    -webkit-mask: none !important;
    mask: none !important;
-
-
 }
 
 .career-postgame-progression-component>div.postgame-champion-background-wrapper>div>img {
    -webkit-mask: radial-gradient(white, transparent 70%);
    mask: radial-gradient(white, transparent 70%);
    position: unset !important;
-
 
 }
 
@@ -550,7 +507,6 @@ html {
 .mastery-progression-container,
 .challenge-progression-top {
    margin-left: 676px;
-   /* bottom: 60px; */
 }
 
 .add-perks-page-button-container {
@@ -577,8 +533,6 @@ html {
    display: none !important;
 }
 
-
-
 .custom-game-tournament-code-container {
    display: none !important;
 }
@@ -598,3 +552,5 @@ html {
 .lol-loading-screen-status-container {
    display: none !important;
 }
+
+/* End of general theming section */
