@@ -1,7 +1,7 @@
 /* Acrylic League of legends client theme */
 /* Adjusted by egirlcatnip from Sarah's acrylic theme */
 
-/* Version: 1.0 */
+/* Version: 1.1 */
 
 /* credits: @aimslut(discord), @egirlcatnip(discord) */
 
@@ -17,6 +17,7 @@
    /* Client colors: */
    --dark-brown: #352a17;
    --light-brown: #785a28;
+   --pale-brown: #c8aa6e;
    --text: #e8dfcc;
 
 }
@@ -68,7 +69,8 @@ lol-social-panel {
 
 /* Status indicator, under name, top right corner */
 .lower-details {
-   display: none !important;
+   /* display: none !important; */
+   gap: 5px !important;
 }
 
 /* Game status icon, notificaton - downloads, offline or online, disabled champs.. , next to top play button*/
@@ -112,6 +114,40 @@ lol-social-panel {
    opacity: 1 !important;
    transition: 0.2s !important;
 }
+
+/* Leven xp ring, user icon, top right corner */
+.xp-ring {
+   opacity: 0 !important;
+   transition: 0.2s !important;
+}
+
+.identity-icon:hover>.summoner-level-icon>.xp-ring {
+   opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
+/* Notifications button, under user icon, top right corner */
+.notifications-button {
+   opacity: 0 !important;
+   transition: 0.2s !important;
+}
+
+.notifications-button:hover {
+   opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
+/* Status, under user icon, top right corner */
+.lower-details {
+   opacity: 0 !important;
+   transition: 0.2s !important;
+}
+
+.lower-details:hover {
+   opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
 
 /* End of hover mouse section  */
 
@@ -552,5 +588,25 @@ html {
 .lol-loading-screen-status-container {
    display: none !important;
 }
+
+lol-social-availability-hitbox {
+   margin: 5px 5px 0 0 !important;
+}
+
+.style-profile-masked-image {
+   mask: none !important;
+}
+
+.unfilled.xp-ring {
+   display: none !important;
+}
+
+.xp-ring {
+   left: 4.1px !important;
+   top: 3.6px !important;
+   width: 50px !important;
+   height: 50px !important;
+}
+
 
 /* End of general theming section */
