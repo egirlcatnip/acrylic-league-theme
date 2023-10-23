@@ -1,9 +1,9 @@
 /* Acrylic League of legends client theme */
 /* Adjusted by egirlcatnip from Sarah's acrylic theme */
 
-/* Version: 1.1 */
+/* Version: 1.2 */
 
-/* credits: @aimslut(discord), @egirlcatnip(discord) */
+/* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 
 /* this source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical    */
 /* Sarah's source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical */
@@ -46,25 +46,14 @@
    filter: hue-rotate(90deg);
 }
 
-/* Social panel (friends-list) menu buttons, leftmost panel */
-.lol-social-actions-bar>.actions-bar>.buttons *:not(.friend-header) {
-   opacity: 0;
-   transition: 0.2s !important;
-}
-
-.lol-social-actions-bar:hover>.actions-bar>.buttons *:not(.friend-header) {
-   opacity: 1;
-   transition: 0.2s !important;
-}
 
 /* Lobby invite buttons, in place of unfilled banners */
 .v2-banner-placeholder {
    display: none !important;
 }
 
-/* Lobby panel (party player count, game-mode), top of friends-list */
-lol-social-panel {
-   display: none !important;
+.regalia-banner-asset-static-image{
+   -webkit-user-drag: none !important;
 }
 
 /* Status indicator, under name, top right corner */
@@ -145,6 +134,28 @@ lol-social-panel {
 
 .lower-details:hover {
    opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
+/* Chat input */
+.chat-room-input {
+   opacity: 0 !important;
+   transition: 0.2s !important;
+}
+
+.chat-room-input:hover {
+   opacity: 1 !important;
+   transition: 0.2s !important;
+}
+
+/* Social panel (friends-list) menu buttons, leftmost panel */
+.lol-social-actions-bar {
+   opacity: 0;
+   transition: 0.2s !important;
+}
+
+.lol-social-actions-bar:hover {
+   opacity: 1;
    transition: 0.2s !important;
 }
 
@@ -286,10 +297,6 @@ html {
 .lol-loading-screen-container {
    margin: 0 !important;
 }
-
-/* .ember-text-field {
-   padding-left: 5px !important;
-} */
 
 .navigation-root-component {
    border-bottom: none !important;
@@ -487,6 +494,12 @@ html {
    display: none !important;
 }
 
+.party-members-container,
+.style-profile-summoner-info-component {
+   -webkit-mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
+   mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
+
+}
 .screen-root.active {
    -webkit-mask: linear-gradient(180deg, transparent 0%, white 30%, white 100%);
    mask: linear-gradient(90deg, transparent 0%, white 10%, white 100%);
@@ -496,13 +509,6 @@ html {
 .rcp-fe-viewport-persistent {
    -webkit-mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
    mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
-
-}
-
-.party-members-container,
-.style-profile-summoner-info-component {
-   -webkit-mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
-   mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
 
 }
 
