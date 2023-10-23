@@ -3,7 +3,7 @@
 
 /* Version: 1.2 */
 
-/* credits: @aimslut(discord), @egirlcatnip(discord) */
+/* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 
 /* this source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical    */
 /* Sarah's source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical */
