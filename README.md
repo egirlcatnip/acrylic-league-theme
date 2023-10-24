@@ -1,5 +1,5 @@
 # Acrylic League of legends client theme
-version 1.1
+version 1.3
 credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) 
 <3
 
@@ -29,9 +29,7 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - [ ] Adjust end of game screens (CLASH)
 - [ ] Adjust Profile-Ranked tab
 - [ ] Fix Profile-Match History gold indicator box
-- [ ] Adjust Inventory-Spells tab
-- [ ] Adjust Inventory-Champions tab
-- (champ borders, hover, free-pick indicator, chest available)
+- [x] Adjust Inventory-Spells tab
 - [ ] you tell me
 
 # Harder TODO:
