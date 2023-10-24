@@ -1,7 +1,7 @@
 /* Acrylic League of legends client theme */
 /* Adjusted by egirlcatnip from Sarah's acrylic theme */
 
-/* Version: 1.3 */
+/* Version: 1.2 */
 
 /* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 
@@ -35,31 +35,65 @@ import * as observer from './observer'
 
 
 /* Code to edit the lobby info panel, invites, leftmost panel, top of friend list */
+// observer.subscribeToElementCreation('lol-parties-game-info-panel', (element) => {
+//     const panelRoot = element.shadowRoot;
+//     const statusCardRoot = panelRoot.querySelector("lol-parties-status-card").shadowRoot;
+//     const gameInviteRoot = panelRoot.querySelector("lol-parties-game-invites").shadowRoot;
+
+//     const statusCardStyle = document.createElement("style");
+//     statusCardStyle.textContent = `
+//         .parties-status-card {
+//             background: none !important;
+//             cursor: default !important;
+//         }
+//         .parties-status-card-bg-container > video {
+//             display: none !important;
+//         }
+//     `;
+
+//     statusCardRoot.appendChild(statusCardStyle);
+
+//     const gameInviteStyle = document.createElement("style");
+//     gameInviteStyle.textContent = `
+//         .parties-game-invite-heading-text{
+//             display: none;
+//         }
+//     `;
+//     gameInviteRoot.appendChild(gameInviteStyle);
+
+// })
+
+
 observer.subscribeToElementCreation('lol-parties-game-info-panel', (element) => {
+    console.log("Element noted")
     const panelRoot = element.shadowRoot;
-    const statusCardRoot = panelRoot.querySelector("lol-parties-status-card").shadowRoot;
-    const gameInviteRoot = panelRoot.querySelector("lol-parties-game-invites").shadowRoot;
+    const statusCardRoot = panelRoot.querySelector("lol-parties-status-card");
+    const gameInviteRoot = panelRoot.querySelector("lol-parties-game-invites");
 
-    const statusCardStyle = document.createElement("style");
-    statusCardStyle.textContent = `
-        .parties-status-card {
-            background: none !important;
-            cursor: default !important;
-        }
-        .parties-status-card-bg-container > video {
-            display: none !important;
-        }
-        .parties-sttus-card-body
-    `;
+    const updateStyles = (shadowRoot) => {
+        const statusCardStyle = document.createElement("style");
+        statusCardStyle.textContent = `
+            .parties-status-card {
+                background: none !important;
+                cursor: default !important;
+            }
+            .parties-status-card-bg-container > video {
+                display: none !important;
+            }
+        `;
 
-    statusCardRoot.appendChild(statusCardStyle);
+        shadowRoot.appendChild(statusCardStyle);
 
-    const gameInviteStyle = document.createElement("style");
-    gameInviteStyle.textContent = `
-        .parties-game-invite-heading-text{
-            display: none;
-        }
-    `;
-    gameInviteRoot.appendChild(gameInviteStyle);
+        const gameInviteStyle = document.createElement("style");
+        gameInviteStyle.textContent = `
+            .parties-game-invite-heading-text{
+                display: none;
+            }
+        `;
+        shadowRoot.appendChild(gameInviteStyle);
+    };
 
-})
+    // Observe changes in Shadow DOMs
+    observeShadowDOM(statusCardRoot, updateStyles);
+    observeShadowDOM(gameInviteRoot, updateStyles);
+});
