@@ -1,7 +1,7 @@
 /* Acrylic League of legends client theme */
 /* Adjusted by egirlcatnip from Sarah's acrylic theme */
 
-/* Version: 1.3 */
+/* Version: 1.4 */
 
 /* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 

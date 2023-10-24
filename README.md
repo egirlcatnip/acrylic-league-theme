@@ -1,6 +1,6 @@
 # Acrylic League of legends client theme
-version 1.3
-credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) 
+version 1.4
+credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord)
 <3
 
 Adjusted by egirlcatnip from Sarah's acrylic theme :3
@@ -17,9 +17,11 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - Your theme should be succesfully installed now! :3
 
 # Troubleshooting:
+  Laggy window : Win 10 issue, no fix
+
+  Other issues:
 - try enabling Low Spec Mode in Pengu Loader
 - Enable Windows 11's transparency effects
-- (Laggy window) - Win 10 issue, no fix
 - you tell me.
 
 # TODO:
@@ -28,7 +30,7 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - [ ] Adjust end of game screens (ranked)
 - [ ] Adjust end of game screens (CLASH)
 - [ ] Adjust Profile-Ranked tab
-- [ ] Fix Profile-Match History gold indicator box
+- [x] Fix Profile-Match History gold indicator box
 - [x] Adjust Inventory-Spells tab
 - [ ] you tell me
 
@@ -41,5 +43,3 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 Preview:
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/057e60f2-b6f4-4eae-98f8-45c6f5448011)
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/7383aa38-a415-4e83-85fc-e82197a43070)
-![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/444a2766-c33a-4173-a8f4-5bd82eb9ffc6)
-

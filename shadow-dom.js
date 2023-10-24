@@ -1,3 +1,15 @@
+/* Acrylic League of legends client theme */
+/* Adjusted by egirlcatnip from Sarah's acrylic theme */
+
+/* Version: 1.4 */
+
+/* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
+
+/* this source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical    */
+/* Sarah's source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical */
+
+/* shadow-dom manipulation function */
+
 export function lobby_panel_css(element) {
     const root = element.shadowRoot;
     const statusCardRoot = root.querySelector("lol-parties-status-card").shadowRoot;
