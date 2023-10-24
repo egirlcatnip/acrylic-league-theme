@@ -32,68 +32,11 @@ import "./theme.css";
 
 /* Import shadow-dom obeserver-fixer-thing */
 import * as observer from './observer'
+import * as shadow_dom from './shadow-dom'
 
 
 /* Code to edit the lobby info panel, invites, leftmost panel, top of friend list */
-// observer.subscribeToElementCreation('lol-parties-game-info-panel', (element) => {
-//     const panelRoot = element.shadowRoot;
-//     const statusCardRoot = panelRoot.querySelector("lol-parties-status-card").shadowRoot;
-//     const gameInviteRoot = panelRoot.querySelector("lol-parties-game-invites").shadowRoot;
-
-//     const statusCardStyle = document.createElement("style");
-//     statusCardStyle.textContent = `
-//         .parties-status-card {
-//             background: none !important;
-//             cursor: default !important;
-//         }
-//         .parties-status-card-bg-container > video {
-//             display: none !important;
-//         }
-//     `;
-
-//     statusCardRoot.appendChild(statusCardStyle);
-
-//     const gameInviteStyle = document.createElement("style");
-//     gameInviteStyle.textContent = `
-//         .parties-game-invite-heading-text{
-//             display: none;
-//         }
-//     `;
-//     gameInviteRoot.appendChild(gameInviteStyle);
-
-// })
-
-
 observer.subscribeToElementCreation('lol-parties-game-info-panel', (element) => {
-    console.log("Element noted")
-    const panelRoot = element.shadowRoot;
-    const statusCardRoot = panelRoot.querySelector("lol-parties-status-card");
-    const gameInviteRoot = panelRoot.querySelector("lol-parties-game-invites");
+    shadow_dom.lobby_panel_css(element)
 
-    const updateStyles = (shadowRoot) => {
-        const statusCardStyle = document.createElement("style");
-        statusCardStyle.textContent = `
-            .parties-status-card {
-                background: none !important;
-                cursor: default !important;
-            }
-            .parties-status-card-bg-container > video {
-                display: none !important;
-            }
-        `;
-
-        shadowRoot.appendChild(statusCardStyle);
-
-        const gameInviteStyle = document.createElement("style");
-        gameInviteStyle.textContent = `
-            .parties-game-invite-heading-text{
-                display: none;
-            }
-        `;
-        shadowRoot.appendChild(gameInviteStyle);
-    };
-
-    // Observe changes in Shadow DOMs
-    observeShadowDOM(statusCardRoot, updateStyles);
-    observeShadowDOM(gameInviteRoot, updateStyles);
-});
+})
