@@ -1,6 +1,7 @@
 # Acrylic League of legends client theme
 version 1.1
-credits: @aimslut(discord), @egirlcatnip(discord)
+credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) 
+<3
 
 Adjusted by egirlcatnip from Sarah's acrylic theme :3
 
@@ -34,6 +35,7 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - [ ] you tell me
 
 # Harder TODO:
+- [x] Style lobby info panel (thanks @unproductive <3)
 - [ ] Fix Home tabs iframe (apply css through .js)
 
 
@@ -41,4 +43,5 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 Preview:
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/057e60f2-b6f4-4eae-98f8-45c6f5448011)
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/7383aa38-a415-4e83-85fc-e82197a43070)
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/444a2766-c33a-4173-a8f4-5bd82eb9ffc6)
 
