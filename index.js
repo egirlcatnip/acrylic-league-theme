@@ -50,19 +50,6 @@ observer.subscribeToElementCreation('lol-parties-game-info-panel', (element) => 
             display: none !important;
         }
         .parties-sttus-card-body
-
-        // .parties-status-card-header-text {
-        //     display: none !important;
-        // }
-        // .parties-status-card-header-icon {
-        //     display: none !important;
-        // }
-        parties-game-search-divider {
-            display: none !important;
-        }
-        // .parties-status-card-body {
-        //     padding: 10px 1px 10px 10px !important;
-        // }
     `;
 
     statusCardRoot.appendChild(statusCardStyle);
@@ -74,4 +61,5 @@ observer.subscribeToElementCreation('lol-parties-game-info-panel', (element) => 
         }
     `;
     gameInviteRoot.appendChild(gameInviteStyle);
+
 })

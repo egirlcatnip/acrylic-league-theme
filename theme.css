@@ -52,7 +52,7 @@
    display: none !important;
 }
 
-.regalia-banner-asset-static-image{
+.regalia-banner-asset-static-image {
    -webkit-user-drag: none !important;
 }
 
@@ -158,6 +158,17 @@
    opacity: 1;
    transition: 0.2s !important;
 }
+/* Social panel (friends-list) menu buttons, leftmost panel */
+.summoner-xp-radial-container {
+   opacity: 0;
+   transition: 0.2s !important;
+}
+
+.summoner-xp-radial-container:hover {
+   opacity: 1;
+   transition: 0.2s !important;
+}
+
 
 
 /* End of hover mouse section  */
@@ -478,8 +489,8 @@ html {
 .style-profile-backdrop-container,
 .clash-parallax-background,
 .clash-tab-bracket-background {
-   -webkit-mask: radial-gradient(white, transparent 76%);
-   mask: radial-gradient(white, transparent 76%);
+   -webkit-mask: radial-gradient(white, transparent 70%);
+   mask: radial-gradient(white, transparent 70%);
 }
 
 .event-shop-token-shop-card-available:hover {
@@ -500,6 +511,7 @@ html {
    mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
 
 }
+
 .screen-root.active {
    -webkit-mask: linear-gradient(180deg, transparent 0%, white 30%, white 100%);
    mask: linear-gradient(90deg, transparent 0%, white 10%, white 100%);
@@ -600,6 +612,7 @@ lol-social-availability-hitbox {
 }
 
 .style-profile-masked-image {
+   -webkit-mask: none !important;
    mask: none !important;
 }
 
@@ -614,5 +627,30 @@ lol-social-availability-hitbox {
    height: 50px !important;
 }
 
+.stat-mod-perk-selector .perk-selector-text .perk-selector-description {
+   white-space: unset !important;
+}
+
+lol-uikit-full-page-modal>span>div {
+   border-right: 2px solid #463714;
+   height: 100%;
+   width: 100%
+}
+
+.collection-spell-container>div>video {
+   -webkit-mask: linear-gradient(90deg, white 60%, transparent);
+   mask: linear-gradient(90deg, white 60%, transparent);
+
+}
+.regalia-profile-crest-hover-area{
+   cursor: default;
+
+}
+.regalia-crest-picker-button{
+   display: none;
+}
+.player-history-items{
+   width: unset !important;
+}
 
 /* End of general theming section */
