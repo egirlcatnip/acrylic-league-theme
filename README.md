@@ -32,6 +32,9 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - [ ] Adjust Profile-Ranked tab
 - [x] Fix Profile-Match History gold indicator box
 - [x] Adjust Inventory-Spells tab
+- [ ] Re-enable social panel's title
+- [ ] Add option for hover only friends list
+- [ ] Adjust social panel's height (cover alphabox)
 - [ ] you tell me
 
 # Harder TODO:
