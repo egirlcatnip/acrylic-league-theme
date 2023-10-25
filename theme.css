@@ -124,12 +124,14 @@
 }
 
 /* Status, under user icon, top right corner */
-.lower-details > .status, .lower-details > lol-social-availability-hitbox {
+.lower-details>.status,
+.lower-details>lol-social-availability-hitbox {
    opacity: 0 !important;
    transition: 0.2s !important;
 }
 
-.lower-details:hover > .status, .lower-details:hover > lol-social-availability-hitbox {
+.lower-details:hover>.status,
+.lower-details:hover>lol-social-availability-hitbox {
    opacity: 1 !important;
    transition: 0.2s !important;
 }
@@ -146,17 +148,17 @@
 }
 
 /* Social panel (friends-list) menu buttons, leftmost panel */
-.lol-social-actions-bar {
+.lol-social-actions-bar > .actions-bar > buttons:not(:first-child){
    opacity: 0;
    transition: 0.2s !important;
 }
 
-.lol-social-actions-bar:hover {
+.lol-social-actions-bar:hover > .actions-bar > buttons:not(:first-child){
    opacity: 1;
    transition: 0.2s !important;
 }
 
-/* level xp ring, top right corner, over profile picture */
+/* Level xp ring, top right corner, over profile picture */
 .summoner-xp-radial-container {
    opacity: 0;
    transition: 0.2s !important;
@@ -167,6 +169,16 @@
    transition: 0.2s !important;
 }
 
+/* Profile background change button, profile page */
+.style-profile-skin-picker-button {
+   opacity: 0;
+   transition: 0.2s !important;
+}
+
+.style-profile-skin-picker-button:hover {
+   opacity: 1;
+   transition: 0.2s !important;
+}
 
 /* End of hover mouse section  */
 
@@ -471,6 +483,7 @@ html {
 .lol-loading-screen-default-state {
    background: transparent !important;
 }
+
 .lol-loading-screen-container {
    background: transparent !important;
    backdrop-filter: blur(120px) brightness(20%) !important;
@@ -482,7 +495,6 @@ html {
    display: none !important;
 }
 
-
 .style-profile-emblem-wrapper {
    background: none !important;
 }
@@ -490,7 +502,8 @@ html {
 .style-profile-backdrop-container,
 .clash-parallax-background,
 .clash-tab-bracket-background {
-   -webkit-mask: radial-gradient(white, transparent 70%);
+   -webkit-mask: linear-gradient(90deg, white 60%, transparent);
+   /* -webkit-mask: radial-gradient(white, transparent 70%); */
    mask: radial-gradient(white, transparent 70%);
 }
 
@@ -524,7 +537,7 @@ html {
 
 }
 
-.lol-leagues-list>div {
+.lol-leagues-list > div {
    overflow: overlay !important;
 }
 
@@ -686,11 +699,19 @@ lol-uikit-full-page-modal>span>div {
 .timer-container>.timer {
    margin-top: 10px !important;
 }
-.lol-uikit-layer-manager-wrapper > .tooltip {
+
+.lol-uikit-layer-manager-wrapper>.tooltip {
    display: none !important;
 }
-.lobby-header-vertical-line{
-   display:none !important;
+
+.lobby-header-vertical-line {
+   display: none !important;
+}
+.style-profile-skin-picker-button{
+   top: 82px !important;
+}
+.style-profile-search-input-component{
+   display:none;
 }
 
 /* End of general theming section */

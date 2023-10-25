@@ -88,3 +88,15 @@ export function lobby_panel_css(element) {
 
     console.log("panel css applied");
 }
+
+
+
+export function example_css(element) {
+    const root = element.shadowRoot;
+    const rootStyle = document.createElement("style");
+    rootStyle.textContent = `
+        /* css */
+    `;
+    root.appendChild(rootStyle);
+    console.log("example css applied");
+}
