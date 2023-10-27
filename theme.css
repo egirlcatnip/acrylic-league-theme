@@ -34,8 +34,8 @@
 
 /* Tweaks: */
 
-/* Show only Blue essence, hide  */
-.currency-rp {
+/* Show only Blue essence, hide riot-points  */
+.currency-rp-container-top-up-enabled {
    display: none !important;
 }
 
@@ -670,17 +670,10 @@ lol-uikit-full-page-modal>span>div {
 .collection-spell-container>div>video {
    -webkit-mask: linear-gradient(90deg, white 60%, transparent);
    mask: linear-gradient(90deg, white 60%, transparent);
-
 }
 
 .player-history-items {
    width: unset !important;
-}
-
-.open-party-toggle-wrapper>.toggle-container {
-   left: 230px;
-   bottom: 13px;
-   z-index: 1;
 }
 
 .smoke-background-container {
@@ -713,6 +706,8 @@ lol-uikit-full-page-modal>span>div {
 .style-profile-search-input-component{
    display:none;
 }
-
+.lobby-banner{
+   height:600px;
+}
 
 /* End of general theming section */

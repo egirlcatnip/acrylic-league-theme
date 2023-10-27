@@ -8,7 +8,7 @@
 /* this source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical    */
 /* Sarah's source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical */
 
-/* Code for the shadow-dom obeserver-fixer-thing */
+/* Code for the shadow-dom obeserver-fixer-thing-a-do by @unproductive */
 
 let observerObject
 let observerCreationCallbacks = { idCallbacks: {}, tagCallbacks: {}, classCallbacks: {} }

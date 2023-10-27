@@ -1,5 +1,5 @@
 # Acrylic League of legends client theme
-version 1.4
+version 1.5
 credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord)
 <3
 
@@ -25,20 +25,20 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - you tell me.
 
 # TODO:
+- [x] Adjust Inventory-Spells tab
+- [x] Fix Profile-Match History gold indicator box
 - [ ] Comment most of selectors
 - [ ] Adjust end of game screens (normals)
 - [ ] Adjust end of game screens (ranked)
 - [ ] Adjust end of game screens (CLASH)
+- [ ] Adjust clash screens
 - [ ] Adjust Profile-Ranked tab
-- [x] Fix Profile-Match History gold indicator box
-- [x] Adjust Inventory-Spells tab
-- [ ] Re-enable social panel's title
-- [ ] Add option for hover only friends list
 - [ ] Adjust social panel's height (cover alphabox)
 - [ ] you tell me
 
 # Harder TODO:
 - [x] Style lobby info panel (thanks @unproductive <3)
+- [x] Style lobby invite notification (thanks @unproductive <3)
 - [ ] Fix Home tabs iframe (apply css through .js)
 
 
