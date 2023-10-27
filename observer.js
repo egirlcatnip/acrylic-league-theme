@@ -1,7 +1,7 @@
 /* Acrylic League of legends client theme */
 /* Adjusted by egirlcatnip from Sarah's acrylic theme */
 
-/* Version: 1.4 */
+/* Version: 1.5 */
 
 /* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 
@@ -10,76 +10,107 @@
 
 /* Code for the shadow-dom obeserver-fixer-thing */
 
-let tagCreationCallbacks = []
-let tagDeletionCallbacks = []
-let classCreationCallbacks = []
-let classDeletionCallbacks = []
+let observerObject
+let observerCreationCallbacks = { idCallbacks: {}, tagCallbacks: {}, classCallbacks: {} }
+let observerDeletionCallbacks = { idCallbacks: {}, tagCallbacks: {}, classCallbacks: {} }
+
+function observerSubscribeToElement(target, callback, callbackList) {
+  function push(target, callback, observerMap) {
+    let v = observerMap[target]
+
+    if (v === undefined) {
+      observerMap[target] = [callback]
+    } else {
+      v.push(callback)
+    }
+  }
+
+  if (target[0] === '.') {
+    push(target.slice(1), callback, callbackList.classCallbacks)
+  } else if (target[0] === '#') {
+    push(target.slice(1), callback, callbackList.idCallbacks)
+  } else {
+    push(target, callback, callbackList.tagCallbacks)
+  }
+}
 
 export function subscribeToElementCreation(target, callback) {
-    if (target[0] === '.') {
-        target = target.slice(1)
-        classCreationCallbacks.push({ target, callback })
-    } else {
-        tagCreationCallbacks.push({ target, callback })
-    }
+  observerSubscribeToElement(target, callback, observerCreationCallbacks)
 }
 
 export function subscribeToElementDeletion(target, callback) {
-    if (target[0] === '.') {
-        target = target.slice(1)
-        classDeletionCallbacks.push({ target, callback })
-    } else {
-        tagDeletionCallbacks.push({ target, callback })
-    }
+  observerSubscribeToElement(target, callback, observerDeletionCallbacks)
 }
 
-const observer = new MutationObserver((mutationsList) => {
-    for (let mutation of mutationsList) {
-        for (let node of mutation.addedNodes) {
-            if (node.nodeType === Node.ELEMENT_NODE) {
-                let tagLowered = node.tagName.toLowerCase()
-                for (let obj of tagCreationCallbacks) {
-                    if (tagLowered.indexOf(obj.target) != -1) {
-                        obj.callback(node)
-                    }
-                }
+function observerHandleElement(element, isNew, callbacks) {
+  //if (isNew) {
+  //    console.log(`new element: <${element.tagName} id="${element.id}" class="${element.className}">`)
+  //
 
-                var classList = node.classList
-                if (classList) {
-                    for (let nodeClass of classList) {
-                        let classLowered = nodeClass.toLowerCase()
-                        for (let obj of classCreationCallbacks) {
-                            if (classLowered.indexOf(obj.target) != -1) {
-                                obj.callback(node)
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        for (let node of mutation.removedNodes) {
-            if (node.nodeType === Node.ELEMENT_NODE) {
-                let tagLowered = node.tagName.toLowerCase()
-                for (let obj of tagDeletionCallbacks) {
-                    if (tagLowered.indexOf(obj.target) != -1) {
-                        obj.callback(node)
-                    }
-                }
-
-                var classList = node.classList
-                if (classList) {
-                    for (let nodeClass of classList) {
-                        let classLowered = nodeClass.toLowerCase()
-                        for (let obj of classDeletionCallbacks) {
-                            if (classLowered.indexOf(obj.target) != -1) {
-                                obj.callback(node)
-                            }
-                        }
-                    }
-                }
-            }
-        }
+  if (element.id != "") {
+    const cb = callbacks.idCallbacks[element.id]
+    if (cb != undefined) {
+      for (const obj of cb) {
+        obj(element)
+      }
     }
-})
-observer.observe(document, { attributes: false, childList: true, subtree: true })
+  }
+
+  const tagLowered = element.tagName.toLowerCase()
+  const cb = callbacks.tagCallbacks[tagLowered]
+  if (cb != undefined) {
+    for (const obj of cb) {
+      obj(element)
+    }
+  }
+
+  const classList = element.classList
+  if (classList) {
+    for (const nodeClass of classList) {
+      const classLowered = nodeClass.toLowerCase()
+      const cb = callbacks.classCallbacks[classLowered]
+      if (cb != undefined) {
+        for (const obj of cb) {
+          obj(element)
+        }
+      }
+    }
+  }
+
+  if (isNew && element.shadowRoot != null) {
+    //console.warn('observing shadowroot for element ' + element.tagName)
+
+    const handleChildren = (element, isNew, callbacks) => {
+      observerHandleElement(element, isNew, callbacks)
+
+      for (const child of element.children) {
+        handleChildren(child, isNew, callbacks)
+      }
+    }
+
+    for (const child of element.shadowRoot.children) {
+      handleChildren(child, isNew, callbacks)
+    }
+
+    observerObject.observe(element.shadowRoot, { attributes: false, childList: true, subtree: true })
+  }
+}
+
+function observerCallback(mutationsList) {
+  for (const mutation of mutationsList) {
+    for (const node of mutation.addedNodes) {
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        observerHandleElement(node, true, observerCreationCallbacks)
+      }
+    }
+
+    for (const node of mutation.removedNodes) {
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        observerHandleElement(node, false, observerDeletionCallbacks)
+      }
+    }
+  }
+}
+
+observerObject = new MutationObserver(observerCallback)
+observerObject.observe(document, { attributes: false, childList: true, subtree: true })

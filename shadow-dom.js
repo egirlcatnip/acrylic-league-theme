@@ -91,6 +91,17 @@ export function lobby_panel_css(element) {
 
 
 
+export function lobby_invite_css(element) {
+    const root = element.shadowRoot;
+    const rootStyle = document.createElement("style");
+    rootStyle.textContent = `
+        /* css */
+    `;
+    root.appendChild(rootStyle);
+    console.log("example css applied");
+}
+
+
 export function example_css(element) {
     const root = element.shadowRoot;
     const rootStyle = document.createElement("style");
