@@ -44,5 +44,14 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 
 
 Preview:
-![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/057e60f2-b6f4-4eae-98f8-45c6f5448011)
-![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/7383aa38-a415-4e83-85fc-e82197a43070)
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/74134768-1542-41cb-aa35-cdd1a716b98b)
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/169bffe0-8ee6-4f75-8457-55299d6275a0)
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/af7835d6-fd21-4acf-ac1c-c07c700c9bc5)
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/e792bd81-9486-406a-a870-eaa43be33438)
+
+
+
+
+
+Wallpaper: [JWST - “Cosmic Cliffs” in the Carina Nebula (NIRCam Image) ](https://webbtelescope.org/contents/media/images/2022/031/01G77PKB8NKR7S8Z6HBXMYATGJ) 
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/96dc9982-e4a7-45c8-8568-7b3469e161ab)
