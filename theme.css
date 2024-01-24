@@ -137,23 +137,15 @@
 }
 
 /* Chat input */
-.chat-room-input {
-   opacity: 0 !important;
-   transition: 0.2s !important;
-}
 
-.chat-room-input:hover {
-   opacity: 1 !important;
-   transition: 0.2s !important;
-}
 
 /* Social panel (friends-list) menu buttons, leftmost panel */
-.lol-social-actions-bar > .actions-bar > buttons:not(:first-child){
+.lol-social-actions-bar>.actions-bar>buttons:not(:first-child) {
    opacity: 0;
    transition: 0.2s !important;
 }
 
-.lol-social-actions-bar:hover > .actions-bar > buttons:not(:first-child){
+.lol-social-actions-bar:hover>.actions-bar>buttons:not(:first-child) {
    opacity: 1;
    transition: 0.2s !important;
 }
@@ -306,6 +298,8 @@ html {
 
 .cdp-backdrop-img {
    opacity: 0.4 !important;
+   position: unset !important;
+
 }
 
 .group-separator {
@@ -537,7 +531,7 @@ html {
 
 }
 
-.lol-leagues-list > div {
+.lol-leagues-list>div {
    overflow: overlay !important;
 }
 
@@ -613,10 +607,6 @@ html {
    width: unset !important;
 }
 
-.champion-mastery-info {
-   display: none !important;
-}
-
 .custom-game-tournament-code-container {
    display: none !important;
 }
@@ -651,8 +641,8 @@ lol-social-availability-hitbox {
 }
 
 .xp-ring {
-   left: 4.1px !important;
-   top: 3.6px !important;
+   left: 3.95px !important;
+   top: 3.9px !important;
    width: 50px !important;
    height: 50px !important;
 }
@@ -700,14 +690,119 @@ lol-uikit-full-page-modal>span>div {
 .lobby-header-vertical-line {
    display: none !important;
 }
-.style-profile-skin-picker-button{
+
+.style-profile-skin-picker-button {
    top: 82px !important;
 }
-.style-profile-search-input-component{
-   display:none;
+
+.style-profile-search-input-component {
+   display: none;
 }
-.lobby-banner{
-   height:600px;
+
+.lobby-banner {
+   height: 600px;
 }
+
+.clash-social-persistent {
+   background: none !important;
+}
+
+.clash-social-persistent-content>img {
+   display: none !important;
+}
+
+.clash-roster-details {
+   background: none !important;
+}
+
+.clash-roster-team-logo-background {
+   -webkit-mask: radial-gradient(white, transparent 70%);
+   mask: radial-gradient(white, transparent 70%);
+}
+
+.player-name__clipboard-copy-icon {
+   display: none;
+}
+
+.background-vignette-container.champ-select-bg>img {
+   -webkit-mask: radial-gradient(white, transparent 70%);
+   mask: radial-gradient(white, transparent 70%);
+}
+
+.lol-social-sidebar .alpha-version-panel {
+   border: none !important;
+}
+
+.lol-premade-voice-button.button-disabled {
+   display: none !important;
+}
+
+lol-uikit-full-page-modal>span>div {
+   border: none !important;
+}
+
+/* Inventory Champion view */
+.champion-thumbnail {
+   border: none !important;
+   opacity: 1 !important;
+   z-index: 1 !important;
+   height: 160px !important;
+}
+
+.champion-thumbnail:hover {
+   height: 100% !important;
+   transition: all ease-in-out;
+   filter: saturate(1.2);
+}
+
+.champion-image-container {
+   height: 220px !important;
+   text-align: center !important;
+   transition: 0.2s !important;
+}
+
+.champion-image {
+   height: 100% !important;
+   border-radius: 4px;
+}
+
+
+.collections-application {
+   text-align: -webkit-center !important;
+}
+
+.champion-name-container {
+   display: none !important;
+}
+
+.champion-mastery-info {
+   display: block !important;
+   background: none !important;
+   border-top: none !important;
+   position: relative !important;
+   top: -221px !important;
+   left: -40px !important;
+}
+
+.champion-mastery-badge-container {
+   width: 32px !important;
+}
+
+.eternals-description-container {
+   display: none !important;
+}
+
+.info-badge-wrapper {
+   top: 0px !important;
+   left: 86px !important;
+}
+
+/* Chrome background */
+
+.inventory-item-image-container {
+   background: none !important;
+}
+
+
 
 /* End of general theming section */

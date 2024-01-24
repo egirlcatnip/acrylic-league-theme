@@ -36,11 +36,14 @@ export function lobby_panel_css(element) {
         margin-top: unset !important;
     }
     .parties-status-card-body > div {
-            margin: 0 10px 0 0 !important;
+        margin: 0 10px 0 0 !important;
         }
-        .parties-status-mode-text{
-            display:none !important;
+    .parties-status-mode-text{
+        display:none !important;
         }
+    .parties-status-card-header-icon {
+        display:none !important;
+    }
 
         `;
     statusCardRoot.appendChild(statusCardStyle);
@@ -106,6 +109,21 @@ export function lobby_invite_css(element) {
 
     // console.log("Invite notification css applied");
 }
+
+export function profile_banner_css(element) {
+    const root = element.shadowRoot;
+    const rootStyle = document.createElement("style");
+    rootStyle.textContent = `
+        * {
+            display: none !important;
+        }
+    `;
+    root.appendChild(rootStyle);
+
+    console.log("Invite notification css applied");
+}
+
+
 
 
 // export function example_css(element) {
