@@ -1,7 +1,10 @@
 # Acrylic League of legends client theme
 version 1.6
-credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord)
-<3
+credits:
+- @aimslut (discord),
+- @egirlcatnip (discord),
+- @unproductive (discord)
+- <3
 
 Adjusted by egirlcatnip from Sarah's acrylic theme :3
 
@@ -10,9 +13,18 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 [Sarah's source](https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical)
 
 # Install guide:
-- Install [Pengu Loader](https://github.com/PenguLoader/PenguLoader)
+- Install [Pengu Loader](https://github.com/PenguLoader/PenguLoader).
+- Download the latest release [here](https://github.com/egirlcatnip/acrylic-league-theme/releases/latest).
+- Paste the .zip contents inside of the Pengu Loader's plugin directory.
+- Enable the theme in Pengu Loader as a plugin.
+- Your theme should be succesfully installed now! :3
+
+## Alternatively, install manualy
+- Install [Pengu Loader](https://github.com/PenguLoader/PenguLoader).
 - Create a folder (eg. "theme") inside the Pengu loader's plugin folder.
-- Add the .js and .css files inside.
+- Clone this repository.
+- Paste the .js and .css files of the theme inside.
+- Enable the theme in Pengu Loader as a plugin.
 - Your theme should be succesfully installed now! :3
 
 ## Latest change
@@ -29,7 +41,7 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 # TODO:
 - [x] Adjust Inventory-Spells tab
 - [x] Fix Profile-Match History gold indicator box
-- [ ] Comment most of selectors
+- [x] Adjust Collections and Inventory screens
 - [ ] Adjust end of game screens (normals)
 - [ ] Adjust end of game screens (ranked)
 - [ ] Adjust end of game screens (CLASH)
