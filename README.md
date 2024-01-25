@@ -1,10 +1,9 @@
 # Acrylic League of legends client theme
-version 1.5
+version 1.6
 credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord)
 <3
 
 Adjusted by egirlcatnip from Sarah's acrylic theme :3
-
 
 [my source](https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical)
 
@@ -15,6 +14,9 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - Create a folder (eg. "theme") inside the Pengu loader's plugin folder.
 - Add the .js and .css files inside.
 - Your theme should be succesfully installed now! :3
+
+## Latest change
+- First step towards enhancing the Inventory/Collections pages!
 
 # Troubleshooting:
   Laggy window : Win 10 issue, no fix
@@ -48,6 +50,7 @@ Preview:
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/169bffe0-8ee6-4f75-8457-55299d6275a0)
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/af7835d6-fd21-4acf-ac1c-c07c700c9bc5)
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/e792bd81-9486-406a-a870-eaa43be33438)
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/dad90802-0a20-4fae-8ef0-5aaa2ffae2f7)
 
 
 
