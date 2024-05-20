@@ -1,7 +1,7 @@
 /* Acrylic League of legends client theme */
 /* Adjusted by egirlcatnip from Sarah's acrylic theme */
 
-/* Version: 1.5 */
+/* Version: 1.6 */
 
 /* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 
@@ -781,11 +781,12 @@ lol-uikit-full-page-modal>span>div {
    border-top: none !important;
    position: relative !important;
    top: -221px !important;
-   left: -40px !important;
+   left: 12px !important;
 }
 
-.champion-mastery-badge-container {
-   width: 32px !important;
+.champion-mastery-badge-container > img {
+   width: 40px !important;
+   height: 40px !important;
 }
 
 .eternals-description-container {
@@ -793,8 +794,8 @@ lol-uikit-full-page-modal>span>div {
 }
 
 .info-badge-wrapper {
-   top: 0px !important;
-   left: 86px !important;
+   top: 2px !important;
+   left: 84px !important;
 }
 
 /* Chrome background */
@@ -802,6 +803,16 @@ lol-uikit-full-page-modal>span>div {
 .inventory-item-image-container {
    background: none !important;
 }
+
+
+
+
+.clash-trophy-border-wrapper, .clash-banner-border-wrapper {
+   display:none;
+}
+
+
+
 
 
 
