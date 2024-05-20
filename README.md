@@ -1,10 +1,11 @@
 # Acrylic League of legends client theme
-version 1.6
+version 1.7
 credits:
 - @aimslut (discord),
 - @egirlcatnip (discord),
 - @unproductive (discord)
-- <3
+
+<3
 
 Adjusted by egirlcatnip from Sarah's acrylic theme :3
 
@@ -27,8 +28,8 @@ Adjusted by egirlcatnip from Sarah's acrylic theme :3
 - Enable the theme in Pengu Loader as a plugin.
 - Your theme should be succesfully installed now! :3
 
-## Latest change
-- First step towards enhancing the Inventory/Collections pages!
+## Latest changes
+- Fix for the new masteries
 
 # Troubleshooting:
   Laggy window : Win 10 issue, no fix
@@ -62,11 +63,15 @@ Preview:
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/169bffe0-8ee6-4f75-8457-55299d6275a0)
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/af7835d6-fd21-4acf-ac1c-c07c700c9bc5)
 ![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/e792bd81-9486-406a-a870-eaa43be33438)
-![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/dad90802-0a20-4fae-8ef0-5aaa2ffae2f7)
+![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/d3c9fd2d-8ed4-4fd4-9792-05ceb484273c)
 
 
 
 
 
-Wallpaper: [JWST - “Cosmic Cliffs” in the Carina Nebula (NIRCam Image) ](https://webbtelescope.org/contents/media/images/2022/031/01G77PKB8NKR7S8Z6HBXMYATGJ) 
-![image](https://github.com/egirlcatnip/acrylic-league-theme/assets/26607304/96dc9982-e4a7-45c8-8568-7b3469e161ab)
+
+Wallpapers: 
+
+[JWST - “Cosmic Cliffs” in the Carina Nebula (NIRCam Image) ](https://webbtelescope.org/contents/media/images/2022/031/01G77PKB8NKR7S8Z6HBXMYATGJ) 
+        
+[JWST - Tarantula Nebula (NIRCam Image) ](https://webbtelescope.org/contents/media/images/2022/041/01GA76MYFN0FMKNRHGCAGGYCVQ)
