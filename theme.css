@@ -798,19 +798,16 @@ lol-uikit-full-page-modal>span>div {
    left: 84px !important;
 }
 
-/* Chrome background */
-
 .inventory-item-image-container {
    background: none !important;
 }
 
-
-
-
 .clash-trophy-border-wrapper, .clash-banner-border-wrapper {
    display:none;
 }
-
+.deep-links-promo {
+   display: none !important 
+}
 
 
 
